@@ -1,11 +1,12 @@
 var noOfDrumButtons=document.querySelectorAll(".drum").length;
-// for(var i=0;i<noOfDrumButtons;i++)
-// {
-//   document.querySelectorAll(".drum")[i].addEventListener("click",function() {
-//     var audio=new Audio("sounds/tom-1.mp3");
-//     audio.play();
-//   });
-// }
+for(var i=0;i<noOfDrumButtons;i++)
+{
+  document.querySelectorAll(".drum")[i].addEventListener("click",function() {
+    this.style.color="white";
+    // var audio=new Audio("sounds/tom-1.mp3");
+    // audio.play();
+  });
+}
 document.querySelectorAll(".drum")[0].addEventListener("click",function() {
   var audio=new Audio("sounds/tom-1.mp3");
   audio.play();
